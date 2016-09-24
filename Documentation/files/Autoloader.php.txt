@@ -152,3 +152,6 @@ class Autoloader
 		}
 	}
 }
+
+$autoloader = new Autoloader(null, 'classes');
+$autoloader->register();
