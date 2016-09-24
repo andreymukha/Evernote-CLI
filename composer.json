@@ -1,0 +1,20 @@
+{
+  "name": "andreymukha/evernotecli",
+  "description": "Библиотека-прослойка для работы с Evernote через консоль командной строки (CLI) с помощью PHP",
+  "keywords": [
+    "evernote",
+    "cli"
+  ],
+  "homepage": "https://github.com/andreymukha/Evernote-CLI",
+  "minimum-stability": "beta",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Andrey Mukha",
+      "email": "andryfly7@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": ["classes"]
+  }
+}
