@@ -99,7 +99,7 @@ class ENScript extends EvernoteCLIAbstract{
 			}
 		}
 
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 
 		return $this->ENScriptEXE($query);
 	}
@@ -125,7 +125,7 @@ class ENScript extends EvernoteCLIAbstract{
 			$query .= "/n \"$notebook\" ";
 		}
 
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE($query);
 	}
 
@@ -139,7 +139,7 @@ class ENScript extends EvernoteCLIAbstract{
 	 * @return array|null|string
 	 */
 	public function showNotes($query = 'any:'){
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE("showNotes /q $query");
 	}
 
@@ -154,7 +154,7 @@ class ENScript extends EvernoteCLIAbstract{
 	 * @return array|null|string
 	 */
 	public function printNotes($query = 'any:'){
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE("printNotes /q $query");
 	}
 
@@ -174,7 +174,7 @@ class ENScript extends EvernoteCLIAbstract{
 		if($query !== false){
 			$query .= " /f $filename";
 		}
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE("exportNotes /q $query");
 	}
 
@@ -197,7 +197,7 @@ class ENScript extends EvernoteCLIAbstract{
 		if($place !== false){
 			$query .= " /t $place";
 		}
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE("createNotebook $query");
 	}
 
@@ -214,7 +214,7 @@ class ENScript extends EvernoteCLIAbstract{
 		if($place !== false){
 			$query .= " /t $place";
 		}
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE("listNotebooks $query");
 	}
 
@@ -231,7 +231,7 @@ class ENScript extends EvernoteCLIAbstract{
 		if($filename !== false){
 			$query .= " /l $filename";
 		}
-		$query .= $this->insertConnection($query);
+		$query = $this->insertConnection($query);
 		return $this->ENScriptEXE("syncDatabase $query");
 	}
 }
