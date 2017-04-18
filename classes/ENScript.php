@@ -1,5 +1,7 @@
 <?php
+namespace AndreyMukha\EvernoteCLI;
 
+use \Exception;
 /**
  * You can invoke ENScript.exe with the commands described below.
  * Note that individual commands cannot be combined.

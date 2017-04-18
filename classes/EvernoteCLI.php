@@ -1,4 +1,6 @@
 <?php
+namespace AndreyMukha\EvernoteCLI;
+
 /**
  * Base class for run Evernote command
  *

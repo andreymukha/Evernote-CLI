@@ -1,5 +1,7 @@
 <?php
+namespace AndreyMukha\EvernoteCLI;
 
+use \Exception;
 /**
  * Class EvernoteCLIAbstract
  * 

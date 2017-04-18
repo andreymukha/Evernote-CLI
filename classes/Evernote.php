@@ -1,4 +1,7 @@
 <?php
+namespace AndreyMukha\EvernoteCLI;
+
+use \Exception;
 /**
  * You can invoke Evernote.exe with the commands described below. Note that individual commands cannot be combined.
  * If Evernote is already running, your command will be passed to the existing instance.

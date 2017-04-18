@@ -5,6 +5,7 @@
 
 # User-specific stuff:
 .idea/
+vendor
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
